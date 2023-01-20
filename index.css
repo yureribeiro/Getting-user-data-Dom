@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color:#3e5a6b
+}
+#container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #66a4ce;
+  padding: 1rem;
+  margin: 2rem;
+  border: .1rem solid #1d3747;
+  border-radius: .5rem;
+}
+
+.titulo {
+  color:  #1a2135;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+label {
+  color: #1a2135;
+  font-weight: bold;
+}
+
+#name,
+#age,
+#confirmAge {
+  width: 100%;
+  margin-bottom: .8rem;
+  padding: .3rem;
+  border: .1rem solid #1d3747;
+  border-radius: .4rem;
+  outline: none;
+  background-color: #d9e2ec;
+}
+
+#button {
+  padding: .4rem;
+  width: 100%;
+  background-color: #accbe9;
+  color:  #1a2135;
+  border: .1rem solid #1d3747;
+  border-radius: .4rem;
+  font-weight: bold;
+  transition: .4s;
+}
+#button:hover {
+  border: .1rem solid #ffffff;
+  background-color: #2e455c;
+  color: #ffffff;
+}
+
+.lista {
+  background-color: red;
+}
+
+.dadosUser {
+  margin-top: 1rem;
+}
+#dados {
+  margin-top: 1rem;
+}
+.nomeUser,
+.idadeUser,
+.confirmUser {
+  color: #1a2135;
+  font-weight: bold;
+  font-size: small;
+}
