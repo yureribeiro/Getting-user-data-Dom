@@ -3,11 +3,17 @@ const form = document.getElementById('form')
 form.addEventListener('submit', function (ev) {
   ev.preventDefault()
 
+  //pegando valores preenchidos no form
   const inputName = document.getElementById('name').value
   const inputAge = document.getElementById('age').value
   const inputConfirm = document.getElementById('confirmAge').value
 
-  //criar lista com dados preenchidos
+  //confirmando idade
+  if(inputAge !== inputConfirm) {
+    alert ('Sua idade não confirma')
+  } else {
+    alert ('Registrado com sucesso')
+      //criar lista com dados preenchidos
  function addUser() {
   const ul = document.getElementById('dados')
 
@@ -26,6 +32,7 @@ form.addEventListener('submit', function (ev) {
     ul.appendChild(newName)
     ul.appendChild(newAge)
     ul.appendChild(newConfirm)
+  }
   }
  
  addUser()
